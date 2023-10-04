@@ -92,7 +92,6 @@
           </div>
         </div>
         <!-- CONTAINER 01 C ENDING -->
-
       </div>
       <!-- CONTAINER 01 ENDING -->
 
@@ -122,117 +121,9 @@
 
         <!-- UNITED STATES OF AMERICA -->
         <div class="flag-12 flag-united-states flag">
+          <!-- Stars container with 9 rows and 11 columns of stars -->
           <div class="us-flag-union">
-            <!-- 9 ROWS AND 11 COLUMNS OF STARS -->
-            <!-- THERE ARE 99 STARS -->
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
-            <img src="./star.png" />
+            <!-- HERE: The 99 stars are added with JavaScript at the bottom -->
           </div>
           <div class="us-flag-rows">
             <div></div>
@@ -254,5 +145,13 @@
       <!-- CONTAINER 02 ENDING -->
     </div>
     <!-- SUPER CONTAINER ENDING -->
+
+    <script>
+      for (let i = 0; i < 99; i++) {
+        const newStar = document.createElement("img");
+        newStar.src = "./star.png";
+        document.querySelector(".us-flag-union").appendChild(newStar);
+      }
+    </script>
   </body>
 </html>
